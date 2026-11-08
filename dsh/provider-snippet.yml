@@ -1,0 +1,29 @@
+# 把下面这段加进 `~/.dsh/profiles/desktop/cordis.patch.yml`。
+#
+# 位置：找到 `- id: llm-pi-ai` 这一项，在它的 `config: providers:` 下面
+# 追加一个 `deepseek9b-local:` 段（和 llamacpp / bonsai-wsl 同级，两个空格缩进）。
+#
+# 注意：这是「在已有 llm-pi-ai 条目里加一个 provider」，
+#       不是新增一个顶层条目。缩进错了 DSH 会静默不加载。
+#
+# 加完后：
+#   1. 在 ~/.dsh/.credentials.yaml 的 refs: 下加一行
+#        DEEPSEEK9B_LOCAL_API_KEY: deepseek9b-local
+#      （本地 llama-server 不校验 key，占位即可）
+#   2. 重启 DSH，模型选择器里会出现「DeepSeek 9B（本地·无审查·识图）」
+
+      deepseek9b-local:
+        displayName: DeepSeek 9B（本地·无审查·识图）
+        api: openai-completions
+        baseURL: http://127.0.0.1:8440/v1
+        apiKeyEnv: DEEPSEEK9B_LOCAL_API_KEY
+        compat:
+          supportsDeveloperRole: false
+        models:
+          - id: deepseek9b
+            name: DeepSeek-V4-Pro-Qwen3.5-9B｜无审查·识图·32K·38tok/s·需先启动WSL服务
+            contextWindow: 32768
+            maxTokens: 4096
+            input:
+              - text
+              - image
