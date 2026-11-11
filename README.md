@@ -4,32 +4,17 @@
 > 做成 DSH 本地模型 provider 的最小可复现方案。
 > 全部参数都在 RTX 4060 Laptop（8GB）+ WSL2 Ubuntu 上实测过。
 
-<p>
-  <img alt="VRAM 8GB tested" src="https://img.shields.io/badge/VRAM-8GB%20tested-76b900?style=flat-square">
-  <img alt="model 9B Q4_K_M" src="https://img.shields.io/badge/model-9B%20Q4__K__M-4c1d95?style=flat-square">
-  <img alt="weights 5.24 GiB" src="https://img.shields.io/badge/weights-5.24%20GiB-0e7490?style=flat-square">
-  <img alt="base Qwen3.5-9B" src="https://img.shields.io/badge/base-Qwen3.5--9B-0891b2?style=flat-square">
-</p>
+![License](https://img.shields.io/badge/License-MIT-a08c00?style=flat)
+![VRAM](https://img.shields.io/badge/VRAM-8GB%20tested-76b900?style=flat)
+![Model](https://img.shields.io/badge/Model-9B%20Q4__K__M-1d4ed8?style=flat)
+![Context](https://img.shields.io/badge/Context-32K%20vision%20%C2%B7%2048K%20text-0d9488?style=flat)
+![Speed](https://img.shields.io/badge/Speed-37--39%20tok%2Fs-dc2626?style=flat)
 
-<p>
-  <img alt="context 32K vision / 48K text" src="https://img.shields.io/badge/context-32K%20vision%20%7C%2048K%20text-2563eb?style=flat-square">
-  <img alt="speed 37-39 tok/s" src="https://img.shields.io/badge/speed-37--39%20tok%2Fs-dc2626?style=flat-square">
-  <img alt="vision mmproj f16" src="https://img.shields.io/badge/vision-mmproj%20f16-7c3aed?style=flat-square">
-  <img alt="uncensored 3/100 refusal" src="https://img.shields.io/badge/uncensored-3%2F100%20refusal-ec4899?style=flat-square">
-</p>
-
-<p>
-  <img alt="platform WSL2 Ubuntu" src="https://img.shields.io/badge/platform-WSL2%20Ubuntu-e95420?style=flat-square">
-  <img alt="llama.cpp b10743" src="https://img.shields.io/badge/llama.cpp-b10743-374151?style=flat-square">
-  <img alt="DSH provider ready" src="https://img.shields.io/badge/DSH-provider%20ready-4D6BFE?style=flat-square">
-  <img alt="license MIT" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
-</p>
-
-<p>
-  <a href="https://github.com/Alexander390370/DeepSeek9B-8GB-VRAM-Setup/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Alexander390370/DeepSeek9B-8GB-VRAM-Setup?style=flat-square&color=eab308&label=stars"></a>
-  <a href="https://github.com/Alexander390370/DeepSeek9B-8GB-VRAM-Setup/commits/master"><img alt="last commit" src="https://img.shields.io/github/last-commit/Alexander390370/DeepSeek9B-8GB-VRAM-Setup?style=flat-square&label=last%20commit"></a>
-  <img alt="single slot" src="https://img.shields.io/badge/concurrency-single%20slot-6b7280?style=flat-square">
-</p>
+![Vision](https://img.shields.io/badge/Vision-mmproj%20f16-7c3aed?style=flat)
+![Uncensored](https://img.shields.io/badge/Uncensored-3%2F100%20refusal-be123c?style=flat)
+![Platform](https://img.shields.io/badge/Platform-WSL2%20Ubuntu-e95420?style=flat)
+![DSH](https://img.shields.io/badge/DSH-provider%20ready-4D6BFE?style=flat)
+[![stars](https://img.shields.io/github/stars/Alexander390370/DeepSeek9B-8GB-VRAM-Setup?style=flat&label=stars&color=eab308)](https://github.com/Alexander390370/DeepSeek9B-8GB-VRAM-Setup/stargazers)
 
 ---
 
